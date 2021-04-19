@@ -1,16 +1,16 @@
 source 'https://rubygems.org'
 
-gem 'sinatra', '~> 2.0.1'
+gem 'sinatra', '~> 2.0.2'
 gem 'haml'
 gem 'bson_ext'
 gem 'bcrypt'
-gem 'puma'
+gem 'puma', '>= 3.12.6'
 gem 'mongo'
-gem 'json'
+gem 'json', '>= 2.3.0'
 
 group :development do
-    gem 'capistrano',         require: false
-    gem 'capistrano-rvm',     require: false
-    gem 'capistrano-bundler', require: false
-    gem 'capistrano3-puma',   require: false
+    gem 'capistrano', '>= 3.9.0', require: false
+    gem 'capistrano-rvm', '>= 0.1.2', require: false
+    gem 'capistrano-bundler', '>= 1.2.0', require: false
+    gem 'capistrano3-puma', '>= 3.1.1', require: false
 end
